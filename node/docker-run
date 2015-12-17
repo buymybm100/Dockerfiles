@@ -1,0 +1,9 @@
+docker run \
+    -d -P \
+    -e DISPLAY \
+    -e XAUTHORITY=/tmp/.Xauthority \
+    -v /home/ssleong/.Xauthority:/tmp/.Xauthority \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v /home/ssleong/src:/home/developer/src \
+    -p 8000:8000 \
+    --name=node_con buymybm100/node_con

@@ -1,0 +1,7 @@
+# cant run emulator, do the following :
+mv emulator emulator.bak
+ln -s emulator64-arm emulator
+
+
+# GL issue
+apt-get install libegl1-mesa libegl1-mesa-drivers xserver-xorg-video-intel libgl1-mesa-dri libglapi-mesa

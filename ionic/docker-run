@@ -1,0 +1,10 @@
+docker run -d  -P \
+    -e DISPLAY \
+    -e XAUTHORITY=/tmp/.Xauthority \
+    -v /home/ssleong/.Xauthority:/tmp/.Xauthority \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v /home/ssleong/src:/home/developer/src \
+    --name ionic buymybm100/ionic \
+     -v /dev/kvm:/dev/kvm \
+     --privileged \
+    -p 8100:8100 -p 35729:35729

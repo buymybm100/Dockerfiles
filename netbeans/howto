@@ -1,0 +1,5 @@
+on desktop side
+
+$ xhost +
+$ export DISPLAY=:0.0
+
